@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <title>Voice Document Typing</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        textarea { width: 100%; height: 300px; font-size: 16px; }
-        button { padding: 10px 15px; margin-right: 10px; }
+        body { 
+            font-family: Arial, 
+            sans-serif; 
+            padding: 20px; 
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)),
+                url(bg.jpg) center/cover no-repeat;
+        }
+        .heading{
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        textarea {width: 80%; height: 400px; font-size: 16px; margin-left: 10%;}
+        button { padding: 10px 15px; margin-right: 10px; border-radius: 15px; cursor: pointer;}
     </style>
 </head>
 <body>
 
+<div class="heading", id="brand">
 <h2 style="color: deepskyblue; font-family:Verdana, Geneva, Tahoma, sans-serif;">Penitall Voice Typing</h2>
+</div>
 
-
+<div class="heading" id="controls">
 <button onclick="startDictation()">Start Dictation</button>
 <button onclick="stopDictation()">Stop</button>
+</div>
 
 <br><br>
 <textarea id="document" placeholder="Start speaking to type your document..."></textarea>
