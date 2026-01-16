@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Document Typing</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        textarea { width: 100%; height: 300px; font-size: 16px; }
+        button { padding: 10px 15px; margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+<h2 style="color: deepskyblue; font-family:Verdana, Geneva, Tahoma, sans-serif;">Penitall Voice Typing</h2>
+
+
+<button onclick="startDictation()">Start Dictation</button>
+<button onclick="stopDictation()">Stop</button>
+
+<br><br>
+<textarea id="document" placeholder="Start speaking to type your document..."></textarea>
+
+<script src="dictation.js"></script>
+</body>
+</html>
+
